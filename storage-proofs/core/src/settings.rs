@@ -29,7 +29,6 @@ pub struct Settings {
     pub window_post_synthesis_num_cpus: u32,
     pub parameter_cache: String,
     pub parent_cache: String,
-    pub use_fil_blst: bool,
     pub use_multicore_sdr: bool,
     pub multicore_sdr_producers: usize,
     pub multicore_sdr_producer_stride: u64,
@@ -55,7 +54,6 @@ impl Default for Settings {
             // The name is retained for backwards compatibility.
             parameter_cache: "/var/tmp/filecoin-proof-parameters/".to_string(),
             parent_cache: cache("filecoin-parents"),
-            use_fil_blst: false,
             use_multicore_sdr: false,
             multicore_sdr_producers: 3,
             multicore_sdr_producer_stride: 128,
