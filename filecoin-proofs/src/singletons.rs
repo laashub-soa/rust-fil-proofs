@@ -1,6 +1,6 @@
+use bellperson::bls::Fr;
 use ff::PrimeField;
 use lazy_static::lazy_static;
-use bellperson::bls::Fr;
 
 use storage_proofs::hasher::pedersen::PedersenDomain;
 
